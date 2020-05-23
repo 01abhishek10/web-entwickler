@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* split home page */
+
+*{
+    padding:0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container-fluid{
+    height:90%;
+}
+img {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20%;
+    display: block;
+}
+
+.col {
+    height:100%;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+nav div ul {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+nav div ul li.nav-item {
+    text-transform: uppercase;
+    font-size:14px;
+    padding:10px;
+    color:black;
+}
+
+#about {
+    margin-top:30%;
+    margin-bottom:40%;
+}
+
+#about h1 {
+    padding-left:22px;
+    padding-bottom: 8px;
+    font-size:30px;
+}
+br{
+    padding-bottom: 5px;
+}
+#about p {
+    padding-top:8px;
+    padding-left:22px;
+    line-height: 27px;
+}
+
+a{
+    color:#2e5f87;
+}
+
+button {
+    margin-top: 20px;
+    padding:5px;
+    border: 1px solid black;
+    border-radius:10px;
+    background-color: transparent;
+}
+
+#overview{
+    padding:0px;
+    margin:0px;
+}
+
+#overview h2{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding-top:20px;
+}
+.info {
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:18px;
+    line-height: 33px;
+}
+

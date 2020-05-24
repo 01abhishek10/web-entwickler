@@ -201,8 +201,8 @@ div.dos h2,div.donts h2 {
     .ov-main,.pv-main {
         background-color:#fff;
     }
-    .sy-vid{
-        display:none;
+    #sy-vid{
+        display: none;
     }
     #prevention .donts h3, .donts h2, #prevention ul{
         margin-top:0px;
@@ -214,4 +214,5 @@ div.dos h2,div.donts h2 {
     .navbar-toggler{
         display:none;
     }
+    
 }

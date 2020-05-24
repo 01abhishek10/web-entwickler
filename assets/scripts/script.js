@@ -13,6 +13,11 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
-
 });
  /*Scroll to top when arrow up clicked END*/
+
+ var media = window.matchMedia("(max-width: 700px)");
+    if(media.matches) {
+        var loc = "ov_mob.mp4"
+        document.getElementById("ov-vid").src = loc;
+    }

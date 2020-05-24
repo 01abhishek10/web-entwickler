@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="assets/styles/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+        <link href="assets/styles/c3.css" rel="stylesheet">
+        <script src="assets/scripts/d3.min.js" type="text/javascript"></script>
+        <script src="assets/scripts/c3.min.js" type="text/javascript"></script>
+        <script src="assets/scripts/papaparse.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     </head>
@@ -25,7 +29,7 @@
                         <img src="images/new_coo.png" width='431' height = '380' alt="logo">
                     </a>
                 </div>
-                <div class="col-lg-6" style="background-color:#84cb73" data-aos="fade-left" data-aos-delay="300">
+                <div class="col-lg-6 main" data-aos="fade-left" data-aos-delay="300">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -42,7 +46,7 @@
                                 <a class="nav-link" href="#prevention">Prevention</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Statistics</a>
+                                <a class="nav-link" href="#statistics">Statistics</a>
                               </li>
                             </ul>
                         </div>
@@ -52,8 +56,8 @@
                             <h1>What is COVID-19?</h1>
                             <p>
                                 Coronavirus disease 2019 (COVID-19) is an infectious disease caused by<br>a newly discovered severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)<br>
-                                <button data-aos="fade-down" data-aos-delay="400">
-                                    See more
+                                <button class="see-more" data-aos="fade-down" data-aos-delay="400">
+                                    <a href="#overview" style="color:black;">See more</a>
                                 </button>
                             </p>
                         </div>
@@ -65,7 +69,7 @@
         <section id="overview">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col-lg-6 ov-main" data-aos="fade-right" data-aos-delay="300">
                         <h2>OVERVIEW</h2>
                         <p class="info">
                             Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. 
@@ -84,7 +88,7 @@
                             Several known coronaviruses are circulating in animals that have not yet infected humans. 
                         </p>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500" style="background-color: #84cb73;">
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500" >
                         <video autoplay loop muted width="648" height='650'>
                             <source src="redit_anim.mp4" type="video/mp4">
                         </video>
@@ -96,12 +100,12 @@
         <section id = "symptoms">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col-lg-6 sy-vid" data-aos="fade-right" data-aos-delay="300">
                         <video autoplay loop muted width="648" height='650'>
                             <source src="sym.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-lg-6" style="background-color:#84cb73;" data-aos="fade-left" data-aos-delay="500">
+                    <div class="col-lg-6 sy-main" data-aos="fade-left" data-aos-delay="500">
                         <div id="particles-js"></div>
                         <h2 >SYMPTOMS</h2>
                         <h3>Most Common Symptoms</h3>
@@ -134,7 +138,7 @@
         <section id= "prevention">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 dos" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col-lg-6 dos pv-main" data-aos="fade-right" data-aos-delay="300">
                         <h2>Prevention</h2>
                         <p class="prev_1"> 
                             To date, there are no specific vaccines or medicines for COVID-19. 
@@ -175,9 +179,16 @@
         </section>
         
         <section id="statistics">
-            
+            <div class="container-fluid" data-aos="fade-right" data-aos-delay="200">
+                <h2 style="text-align: center; margin-bottom: 10px; margin-top: 4px;">Statistics</h2>
+                <h3 style="text-align: center;">COVID-19 cases in India</h3>
+                <div id = "chart">
+                </div>
+            </div>
         </section>
+
         <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     </body>
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/script.js" type="text/javascript"></script>
+    <script src="assets/scripts/create-graph.js" type="text/javascript"></script>
 </html>

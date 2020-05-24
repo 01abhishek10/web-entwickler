@@ -36,6 +36,9 @@
     padding:0px;
 }
 
+.see-more a:hover{
+    text-decoration: none;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -53,6 +56,10 @@ img {
     height:100%;
     margin-right:0px;
     margin-left:0px;
+}
+
+.main,.ov-main,.sy-main,.pv-main {
+    background-color:#84cb73;
 }
 
 nav div ul {
@@ -188,4 +195,23 @@ div.dos h2,div.donts h2 {
 
 #prevention ul {
     margin-bottom:25%;
+}
+
+@media(max-width:700px) {
+    .ov-main,.pv-main {
+        background-color:#fff;
+    }
+    .sy-vid{
+        display:none;
+    }
+    #prevention .donts h3, .donts h2, #prevention ul{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    #prevention .donts{
+        background-color: #84cb73;
+    }
+    .navbar-toggler{
+        display:none;
+    }
 }

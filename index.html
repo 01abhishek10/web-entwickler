@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="assets/styles/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+        <script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     </head>
     <body>
@@ -17,7 +19,7 @@
         <div class="container-fluid">
             <div class="row" >
                 <div class="col" data-aos="fade-right" data-aos-delay="200">
-                    <a  href="index.html/" >
+                    <a  href="/index.html" >
                         <img src="images/new_coo.png" width='431' height = '380' alt="logo">
                     </a>
                 </div>
@@ -29,10 +31,10 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                               <li class="nav-item active">
-                                <a class="nav-link" href="#">Overview <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#overview">Overview <span class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Symptoms</a>
+                                <a class="nav-link" href="#symptoms">Symptoms</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="#">Prevention</a>
@@ -61,7 +63,7 @@
         <section id="overview">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col" style="background-color:#84cb73" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
                         <h2>OVERVIEW</h2>
                         <p class="info">
                             Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. 
@@ -80,7 +82,7 @@
                             Several known coronaviruses are circulating in animals that have not yet infected humans. 
                         </p>
                     </div>
-                    <div class="col" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="500">
+                    <div class="col" data-aos="fade-right" data-aos-delay="500">
                         <video autoplay loop muted width="648" height='650'>
                             <source src="redit_anim.mp4" type="video/mp4">
                         </video>
@@ -92,23 +94,36 @@
         <section id = "symptoms">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col" >
-                        
+                    <div class="col" data-aos="fade-right" data-aos-delay="300">
+                        <video autoplay loop muted width="648" height='650'>
+                            <source src="sym.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="col" style="background-color:#84cb73;">
-                        <h2>SYMPTOMS</h2>
-                        <h3>Most Common</h3>
-                        <ul>
+                    <div class="col" style="background-color:#84cb73;" data-aos="fade-left" data-aos-delay="500">
+                        <div id="particles-js"></div>
+                        <h2 >SYMPTOMS</h2>
+                        <h3>Most Common Symptoms</h3>
+                        <ul class="mos_com">
                             <li>Fever</li>
                             <li>Dry Cough</li>
                             <li>Tiredness</li>
                         </ul>
-                        <h3>Serious</h3>
-                        <ul>
+                        <h3>Serious Symptoms</h3>
+                        <ul class= "ser_com">
                             <li>Difficulty breathing or shortness of breath</li>
                             <li>Chest pain or pressure</li>
                             <li>Loss of speech or movement</li>
                         </ul>
+                        <p class="first">
+                            Seek immediate medical attention if you have serious symptoms.
+                            Always call before visiting your doctor or health facility
+                        </p>
+                        <p>
+                            People with mild symptoms who are otherwise healthy should manage their symptoms at home.
+                        </p>
+                        <p class="last">
+                            On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -116,5 +131,5 @@
         
         
     </body>
-    <script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
+    
 </html>

@@ -12,18 +12,20 @@
         <script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     </head>
+
+
     <body>
         <script>
             AOS.init();
         </script>
         <div class="container-fluid">
             <div class="row" >
-                <div class="col" data-aos="fade-right" data-aos-delay="200">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <a  href="/index.html" >
                         <img src="images/new_coo.png" width='431' height = '380' alt="logo">
                     </a>
                 </div>
-                <div class="col" style="background-color:#84cb73" data-aos="fade-left" data-aos-delay="300">
+                <div class="col-lg-6" style="background-color:#84cb73" data-aos="fade-left" data-aos-delay="300">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -37,7 +39,7 @@
                                 <a class="nav-link" href="#symptoms">Symptoms</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Prevention</a>
+                                <a class="nav-link" href="#prevention">Prevention</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="#">Statistics</a>
@@ -63,7 +65,7 @@
         <section id="overview">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col-lg-6" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
                         <h2>OVERVIEW</h2>
                         <p class="info">
                             Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. 
@@ -82,7 +84,7 @@
                             Several known coronaviruses are circulating in animals that have not yet infected humans. 
                         </p>
                     </div>
-                    <div class="col" data-aos="fade-right" data-aos-delay="500">
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500" style="background-color: #84cb73;">
                         <video autoplay loop muted width="648" height='650'>
                             <source src="redit_anim.mp4" type="video/mp4">
                         </video>
@@ -94,12 +96,12 @@
         <section id = "symptoms">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col" data-aos="fade-right" data-aos-delay="300">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
                         <video autoplay loop muted width="648" height='650'>
                             <source src="sym.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="col" style="background-color:#84cb73;" data-aos="fade-left" data-aos-delay="500">
+                    <div class="col-lg-6" style="background-color:#84cb73;" data-aos="fade-left" data-aos-delay="500">
                         <div id="particles-js"></div>
                         <h2 >SYMPTOMS</h2>
                         <h3>Most Common Symptoms</h3>
@@ -128,8 +130,54 @@
                 </div>
             </div>
         </section>
+
+        <section id= "prevention">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 dos" style="background-color:#84cb73;" data-aos="fade-right" data-aos-delay="300">
+                        <h2>Prevention</h2>
+                        <p class="prev_1"> 
+                            To date, there are no specific vaccines or medicines for COVID-19. 
+                            Treatments are under investigation, and will be tested through clinical trials
+                        </p>
+                        <h3 >Don'ts</h3>
+                        <img src="images/wrong_mark.png" width = "50" height="50" alt="donts"><br>
+                        <div class="tips">
+                            <ul>
+                                <li>Don't have a close contact with anyone, if you're experiencing cough and fever</li>
+                                <li>Don't touch your eyes, nose and mouth</li>
+                                <li>Don't spit in public</li>
+                                <li>Don't participate in large gatherings</li>
+                                <li>Don't use over the counter medicines</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 donts" data-aos="fade-left" data-aos-delay="500">
+                        <h2>Prevention</h2>
+                        <p class="prev_1">
+                            It is normal to feel sad, stressed, or confused during a crisis.  
+                            If you feel overwhelmed, talk to a health worker or counsellor.
+                        </p>
+                        <h3 class="head">Do's</h3>
+                        <img src="images/crrt.png" width = "50" height = "50" alt = "dos"><br>
+                        <div class="n-tips">
+                            <ul>
+                                <li>Wash your hands frequently with soap and water or use alcohol based rub</li>
+                                <li>Cover your nose and mouth with handkerchief/tissue while sneezing and coughing</li>
+                                <li>Throw used tissues into closed bins immediately after use</li>
+                                <li>See a doctor if you feel unwell, while visiting doctor wear a mask</li>
+                                <li>If you have any signs/symptoms please call State helpline number or MOHFW helpline 011-23978046</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        
+        <section id="statistics">
+            
+        </section>
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     </body>
-    
+    <script src="assets/scripts/script.js"></script>
 </html>

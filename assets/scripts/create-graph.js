@@ -25,10 +25,12 @@ function createGraph(data) {
     if(media.matches) {
         var wt = 380;
         var ht = 300;
+        var marx = 4;
     }
     else {
-        var ht = 568;
+        var ht = 520;
         var wt = 1300;
+        var marx = 12;
     }
     var chart = c3.generate({
         bindto: '#chart',
@@ -50,7 +52,7 @@ function createGraph(data) {
                 tick: {
                     multiline:false,
                     culling: {
-                        max: 12 // the number of tick texts will be adjusted to less than this value
+                        max: marx // the number of tick texts will be adjusted to less than this value
                     }
                     // for normal axis, default on
                     // for category axis, default off

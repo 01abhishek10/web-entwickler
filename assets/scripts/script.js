@@ -20,4 +20,6 @@ $(document).ready(function() {
     if(media.matches) {
         var loc = "ov_mob.mp4";
         document.getElementById("ov-vid").src = loc;
+        document.getElementById("ov-vid").width = "300";
+        document.getElementById("ov-vid").height = "700";
     }

@@ -202,10 +202,10 @@ div.dos h2,div.donts h2 {
         height:100%;
     }
     .logoo{
-        margin-top:35%;
-        margin-bottom: 45%;
+        margin-top:20%;
+        margin-bottom: 20%;
     }
-    .col-lg-6 img {
+    .logoo img {
         width:250px;
         height:250px;
     }
@@ -224,6 +224,12 @@ div.dos h2,div.donts h2 {
     }
     .navbar-toggler{
         display:none;
+    }
+    #prevention h3 {
+        margin-left:80px;
+    }
+    #prevention h3.head {
+        margin-left:80px;
     }
     
 }

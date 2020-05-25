@@ -23,7 +23,7 @@ function createGraph(data) {
     
     var media = window.matchMedia("(max-width: 700px)");
     if(media.matches) {
-        var wt = 380;
+        var wt = 390;
         var ht = 300;
         var marx = 4;
     }
@@ -66,7 +66,7 @@ function createGraph(data) {
             },
             y: {
                 max: 40000,
-                min: 50,
+                min: 0,
                 padding: {top:0, bottom:0}
             }
         }

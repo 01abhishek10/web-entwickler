@@ -122,7 +122,6 @@ button {
     margin-top:18px;
     line-height: 33px;
 }
-
 #symptoms h2 {
     padding-top:20px;
     padding-left:10px;
@@ -231,5 +230,10 @@ div.dos h2,div.donts h2 {
     #prevention h3.head {
         margin-left:80px;
     }
-    
+    .ov-nvid {
+        position: relative;
+        top:0;
+        height:auto;
+        width:100%;
+    }
 }
